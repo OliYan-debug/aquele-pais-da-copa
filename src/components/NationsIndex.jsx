@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import worldCup from "../services/worldCup";
 import "../assets/Nations.css"
 import Header from "./Header";
+import Footer from "./Footer";
 const NationsIndex = () => {
   const [nations, setNations] = useState([]);
 
@@ -26,6 +27,7 @@ const NationsIndex = () => {
   <Header></Header>
   <h2 id="informative">Escolha uma Seleção!</h2>
   <div className="nationsContainer">{nationsDetails}</div>
+  <Footer></Footer>
   </>);
 };
 

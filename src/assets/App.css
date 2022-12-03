@@ -14,9 +14,6 @@
   font-family: 'Lato', sans-serif;
 }
 body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: var(--rich-black-fogra-29);
 }
 .container h1{
@@ -27,6 +24,7 @@ body{
   background-color: var(--shamrock-green);
 }
 .container{
+  margin: auto;
   max-width: 1280px;
   width:100%;
   padding: 20px;
@@ -75,7 +73,17 @@ header{
   font-weight: bolder;
   font-size: 1.3rem;
 }
+footer{
+  background-color: var(--shamrock-green);
+  padding: 20px;
+  text-align: center;
+  color:white
 
+}
+footer a {
+  color:white;
+  text-decoration: none;
+}
 @media screen and (width <= 1280px) {
   .container{
     border:none;
