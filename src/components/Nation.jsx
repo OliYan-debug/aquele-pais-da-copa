@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import worldCup from "../services/worldCup";
 import Card from "./Card";
 
 const Nation = () => {

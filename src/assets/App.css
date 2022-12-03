@@ -19,7 +19,7 @@ body{
   align-items: center;
   background-color: var(--rich-black-fogra-29);
 }
-h1{
+.container h1{
   width: 100%;
   text-align: center;
   margin-bottom: 20px;
@@ -56,17 +56,24 @@ img{
   width: 100%;
   text-align: center;
 }
-ul{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 40px;
-}
-ul a{
-  width: 50%;
-  max-width: 350px;
+
+header{
+  padding: 20px;
   color: white;
+  background-color: var(--shamrock-green);
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+#header_title{
+  font-style: italic;
+  text-shadow: 2px 2px var(--dark-blue-gray);
+}
+#header_link{
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.3rem;
 }
 
 @media screen and (width <= 1280px) {

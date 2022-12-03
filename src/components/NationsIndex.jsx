@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import worldCup from "../services/worldCup";
-
+import "../assets/Nations.css"
+import Header from "./Header";
 const NationsIndex = () => {
   const [nations, setNations] = useState([]);
 
@@ -11,11 +12,21 @@ const NationsIndex = () => {
   }, []);
 
   const nationsDetails = nations.map((nation) => {
-    return <a href={"/" + nation.name_formated}>
+    return (
+    
+    <div id={nation._id} className="nation">
+      <h2 className="title">{nation.name}</h2>
         <img src={nation.flag} alt={nation.name} title={nation.name} />
-        <li>{nation.name}</li></a>;
+        <a href={"/" + nation.name_formated}><button>Ver País</button></a>
+      </div>);
   });
-  return <ul>{nationsDetails}</ul>;
+
+  return (
+  <>
+  <Header></Header>
+  <h2 id="informative">Escolha uma Seleção!</h2>
+  <div className="nationsContainer">{nationsDetails}</div>
+  </>);
 };
 
 export default NationsIndex;
