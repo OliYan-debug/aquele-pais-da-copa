@@ -4,7 +4,7 @@ Projeto inspirado na Copa do mundo que mostra um pouco da história do páises q
 
 ## Demonstração
 
-![demo](tree/main/public/example.gif)
+![demo](/public/example.gif)
 
 ## Apêndice
 
